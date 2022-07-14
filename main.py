@@ -5,11 +5,7 @@ from core.board.game_statistics import show_statistics
 
 
 def main():
-    '''
-    Uma execução do programa proposto deve rodar 300
-    simulações, imprimindo no console os dados
-    referentes às execuções.
-    '''
+
     results = []
     for index in range(int(settings.ENV_NUMBER_SIMULATION)):
         board = create_board()
