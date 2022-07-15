@@ -7,11 +7,11 @@ Para executar é necessário a instalação [docker](https://www.docker.com/).
 ### Build
 Antes de iniciar o script é necessário fazer o build para criar a imagem no docker a partir do arquivo *Dockerfile*
 ```bash
-sudo docker build -t board .
+docker build -t board .
 ```
 ### Start
 ```bash
-sudo docker run board
+docker run board
 ```
 
 ## Proposta
