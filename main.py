@@ -5,6 +5,10 @@ from core.board.game_statistics import show_statistics
 
 
 def main():
+    '''
+    Uma vez executado deve rodar 300 simulações e exibir no console
+    os dados de simulações referente as execulções.
+    '''
 
     results = []
     for index in range(int(settings.ENV_NUMBER_SIMULATION)):

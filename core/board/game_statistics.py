@@ -25,18 +25,18 @@ def show_statistics(results):
         count_winner[strategy] += 1
     # quantos turnoe em media demora uma partida
     print(
-        f'''Quantas partidas terminam por tempo esgotado(timeout): '''
-        f'''{total_timeout}'''
+        f'''\nQuantas partidas terminam por tempo esgotado(timeout): '''
+        f'''{total_timeout} \n'''
     )
     print(
         f'''Quantos turnos em média demora uma partida: '''
-        f'''{total_played / len(results):.1f}'''
+        f'''{total_played / len(results):.1f}\n'''
     )
     print(
-        f'''Qual o comportamento que mais venceu:
+        f'''Qual o comportamento que mais venceu: \n
         {count_winner.most_common(1)[0][0]}
-        venceu: {count_winner.most_common(1)[0][1]}'''
+        venceu: {count_winner.most_common(1)[0][1]}\n'''
     )
-    print("Qual a porcentagem de vitórias por comportamento dos jogadores")
+    print("Qual a porcentagem de vitórias por comportamento dos jogadores\n")
     for strategy, winner in count_winner.most_common():
         print("  *  ", f"{strategy}: {(winner * 100)// len(results)}%")
